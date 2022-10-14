@@ -1,0 +1,45 @@
+#!/bin/bash
+
+w3m https://status.zoom.us/ > /tmp/status.zoom.us.txt
+
+# Possible  
+# if grep -q "Meeting Telephony Services ? Operational" /tmp/status.zoom.us.txt;
+# if grep -q "Meeting Telephony Services ? Degraded Performance" /tmp/status.zoom.us.txt;
+
+if grep -q "Zoom Meetings ? Operational" /tmp/status.zoom.us.txt;
+
+then 
+   echo "OK - ZOOM MEETINGS OK";
+	exit 0
+else
+   echo "WARNING - ZOOM MEETINGS NOT OK. Check https://status.zoom.us/ for more information";
+	exit 1
+fi
+exit
+
+# Possible Values 22.06.2021
+# "Meeting Telephony Services ? Operational"
+# "Zoom Meetings ? Operational"
+# "Zoom Video Webinars ? Operational"
+# "Zoom Phone Operational"
+# "Zoom Chat ? Operational"
+# "Zoom Website Operational"
+# 	"Zoom Dashboard & Reporting Operational"
+# 	"Download Center Operational"
+# 	"Web Portal Operational"
+# 	"Web Client Operational"
+# 	"Zoom Room Operational"
+# "Conference Room Connector Operational"
+#  	"Zoom Cloud Room Connector ? Operational"
+#  	"Zoom Connector for Cisco Operational"
+# 	"Zoom Connector for Polycom Operational"
+# 	"Cloud Recording Operational"
+# "Meeting Telephony Services ? Operational"
+# "Integrations Operational"
+# 	Live Streaming Operational
+# Zoom Developer Platform Operational
+# 	Web SDK Operational
+# 	REST API Operational
+# 	Marketplace Operational
+# 	Webhooks Operational
+
