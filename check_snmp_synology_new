@@ -2,6 +2,7 @@
 # check_snmp_synology for nagios
 # Version: 2.5
 # 07.12.2016  Nicolas Ordonez, Switzerland
+# 10.10.2022 Changes from Christian Tindorf - disk temeprature default too low
 #
 # Thanks to contributors:
 # - Tobias Schenke
