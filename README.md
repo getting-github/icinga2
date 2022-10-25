@@ -5,4 +5,4 @@ Check_zoom
 Needs to be set up as a ping or http-check service. The IP needs to point to the corresponding Zoom AWS Server for your country.
 https://www.pingplotter.com/wisdom/solutions/how-to-troubleshoot-zoom
 
-Dependencies: w3m (apt install w3m)
+Dependencies: w3m
