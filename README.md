@@ -6,3 +6,7 @@ Needs to be set up as a ping or http-check service. The IP needs to point to the
 https://www.pingplotter.com/wisdom/solutions/how-to-troubleshoot-zoom
 
 Dependencies: w3m
+
+
+check_snmp_synology_new
+> Minor changes to produce less warnings
